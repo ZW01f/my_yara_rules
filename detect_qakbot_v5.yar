@@ -1,15 +1,9 @@
-rule detect_qbot_v5
+rule detect_Qakbot_v5
 {
     meta:
         description = "just a rule for Qakbot v5"
         author = "Mohamed Ezzat (@ZW01f)"
-        date ="2024-05-24"
-        yarahub_reference_md5  = "362978ed1c1eec5ff19b744601e082a2"
-        yarahub_uuid = "ca1a4dbd-0b7a-4eb1-bc46-77e711ed471f"
-        yarahub_license = "CC BY-NC 4.0"
-        yarahub_rule_matching_tlp = "TLP:WHITE"
-        yarahub_rule_sharing_tlp = "TLP:GREEN"
-        malpedia_family = "win.qakbot"
+        hash1  = "af6a9b7e7aefeb903c76417ed2b8399b73657440ad5f8b48a25cfe5e97ff868f"
         hash2  = "59559e97962e40a15adb2237c4d01cfead03623aff1725616caeaa5a8d273a35"
     strings:
         $s1 = "\\u%04X\\u%04X" ascii wide
